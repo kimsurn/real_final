@@ -1,0 +1,578 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+	<script src="https://use.typekit.net/dcf1ame.js"></script>
+ <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+<title>
+	88generation
+</title>
+
+<style>
+
+a{ text-decoration: none; color: black; }
+
+	body{ width:1200px; margin: auto; }
+
+	header, section{width:1200px; margin:auto;}
+	header{background: orange; height:200px;}
+
+	.wrap{width: 400px;}
+
+	/*h1,h2,h3,p{font-family: "source-han-serif-korean",serif;}
+	h1{text-align:right; font-size: 4em; height:220px; line-height:1.7; color:white; font-weight: 900;}
+	h2{text-align: left; font-size: 2.5em; margin-top: 0.3em; padding-left: 0.3em;width: 800px; line-height: 1.7; color: white; font-weight: 400;}
+  h3{text-align: left; font-size: 2.5em; margin-top: 0.3em; padding-left: 0.2em;  width:400px; line-height: 1.5; color: white; font-weight: 400;}
+
+
+	p{font-size: 1.0em; text-align: left; padding-top: 0.3em; padding-left: 0.5em; padding-right: 0.5em; padding-top: 0em;line-height:1.8; color:white; font-weight: 200; overflow: hidden; }*/
+
+	section{margin-top: 3em;}
+
+
+	.orange{background: orange;}
+	.blue{background: blue;}
+	.black{background: black;}
+
+	.full{width:1200px;height:400px;float: left;}
+	.nemo{width:1000px; height:400px;float:left;}
+	.rect{width:800px; height:400px;float:left;}
+	.square{width:400px; height:400px;float:left;}
+	.small{width:200px; height: 400px; float:left;}
+
+	.full2{width:1194px;height:400px;float: left;}
+	.nemo2{width:992px; height:400px;float:left;}
+	.rect2{width:794px; height:400px;float:left;}
+	.square2{width:392px; height:400px;float:left;}
+	.small2{width:194px; height: 400px; float:left;}
+		
+	.half{height:200px; }
+	.clear{height: 400px;}
+	.few{height: 600px;}
+	.over{height: 800px;}
+
+	.half2{height:196px; }
+	
+	.half3{height:192px; float:right;}
+
+	.margin1{margin: 2.5em 0.5em 2.5em 0em;}
+	.margin2{margin: 2.5em 0em;}
+	.margin3{margin: 0em 0em 2.5em 0em;}
+	.margin4{margin: 0em 0em 0.5em 0em;}
+
+	h1,h2,h3,p,p1,p2,p3,p4,p5,p6{font-family: "source-han-serif-korean",serif;}
+		h1{font-size:2.4em; line-height:1.5; font-weight: 700; overflow: hidden; text-align: center; margin-top: -2em }
+		h1:hover {color: white;}
+		h2{font-size:2.7em; line-height:1.6; font-weight: 800; overflow: hidden; text-align: right; margin-top: -1em }
+		h3{font-size:2.7em; line-height:1.5; font-weight: 800; overflow: hidden; }
+
+		p{font-size: 1.0em; line-height:1.5; font-weight: 600; overflow: hidden;color: black;}
+		p:hover{font-weight: 400; color: white;}
+		p1{font-size: 1.1em; line-height:0; font-weight: 600; overflow: hidden; margin-top: -2em; text-decoration: none; }
+		p2{font-size: 1.0em; line-height:1.7; font-weight: 500; overflow: hidden; margin-top: -2em; color: white;}
+		p3{font-size: 0.9em; line-height:1.7; font-weight: 400; overflow: hidden; margin-top: 5em; color: white;}
+		p4{font-size:1.5em; line-height:1.9; font-weight: 700; overflow: hidden; color: black; text-align: right; margin-top: 0em;}
+		p5{font-size:1.1em; line-height:1.7; font-weight: 500; overflow: hidden; }
+		p6{font-size:1.1em; line-height:1.8; font-weight: 400; overflow: hidden; }
+
+
+		.beigeabsolute {position: absolute; top:619px;}
+		.paperabsolute1 {position: absolute; top: 1600px;}
+		.box {position: relative;}
+		.block {display: block;}
+
+		.left{float: left;}
+		.right{float:right;}
+		.relative{position: relative;}
+
+		.width1400 {width:1400px; }
+		.wudth1200 {width:1200px; }
+		.width800 {width:788px; }
+		.width600 {width:600px; }
+		.width550 {width:550px; }
+		.width500 {width:520px; }
+		.width450 {width:450px; }
+		.width400 {width:380px; }
+		.width380 {width: 390px; }
+		.width320 {width: 320px; }
+		.width50 {width: 100px; }
+
+		.height100 {height:100px; }
+		.height200 {height:225px; }
+		.height275 {height:275px; }
+		.height300 {height:300px; }
+		.height500 {height:500px; }
+		.height800 {height:900px; }
+
+		.textleft {text-align:left;}
+		.textright {text-align:right;}
+		.textcenter {text-align:center;}
+
+		.margintop20 {margin-top: 20em;}
+		.margintop16 {margin-top: 18em;}
+		.margintop14 { margin-top:15em; }
+		.margintop12 { margin-top:11em; }
+		.margintop10 { margin-top:7em; }
+		.margintop6 { margin-top:6em;}
+		.margintop4 { margin-top:4.7em;}
+		.margintop2 { margin-top:3em;}
+		.margintop2-1{margin-top:2em; }
+		.margintop1 {margin-top:1em; }
+		.margintop0 { margin-top:0em;}
+		.margintop-1 { margin-top:-0.5em;}			
+		.margintop-2 { margin-top:-2em;}	
+		.margintop-5 { margin-top:-6em;}	
+		.margintop-10 {margin-top:-10em;}
+		.margintop-11 {margin-top:-17.5em;}
+
+		.marginleft22 { margin-left:22em;}
+		.marginleft18 { margin-left:18em;}
+		.marginleft13 { margin-left:15em;}
+		.marginleft5 { margin-left:9.2em;}
+		.marginleft4 { margin-left:4.3em;}
+		.marginleft2 { margin-left:2em;}
+		.marginleft1 { margin-left:1.3em;}
+		.marginleft-10 { margin-left:-10em;}
+
+		.marginright13 { margin-right:12em;}
+		.marginright10 { margin-right:11em;}
+		.marginright7 { margin-right:10em;}
+		.marginright6 {margin-right: 5.9em;}
+		.marginright4 { margin-right:4em;}
+		.marginright3 { margin-right:3em;}
+
+		.black {color: black;}
+
+		.old img {width: 1515px; height: 720px; margin-left: -10em; margin-top: -5.2em;}
+
+		.footer-width {margin-left: -10em; width: 1515px; height: 520px;}
+		.footer{ float:left; display: block; width: 210px; margin:0 auto;}/*40*/
+		.footer img {display: block; width: 130px;}
+		.footer-margin {margin: 8em 3em 0em 0em;}
+		.footer-margin2 {margin: 8em 3em 0em 8em;}
+
+		.box {background-color: rgba(0,0,0,0);, width: 1200px; height: 800px; display: block;}
+
+		.more { float:right; width: 110px; overflow: hidden; display: block; height:58px;}
+		.more img { width: 100%; margin-right: 12em; margin-top: 0.5em;}
+		.more img:hover { background:darkgray; }
+
+		.more2 { float:left; width: 110px; overflow: hidden; display: block; height:58px;}
+		.more2 img { width: 100%; margin-top: 0.5em;}
+		.more2 img:hover { background:darkgray; }
+
+		.more3 { float:left; width: 110px; overflow: hidden; display: block; height:58px;}
+		.more3 img { width: 100%; margin-top: 0.5em;}
+		.more3 img:hover { background:darkgray; }
+
+		.more4 { float:right; width: 110px; overflow: hidden; display: block; height:58px;}
+		.more4 img { width: 100%; margin-top: 0.5em;}
+		.more4 img:hover { background:darkgray; }
+
+		.image1 { float:right; width: 445px; overflow: hidden; display: block; height:605px;}
+		.image1 img { width: 100%; cursor: crosshair; transition-duration: 1.2s;
+			      transition-property: width, height;
+			      animation: mymove 2s;}
+		.image1 img:hover {width:520px; }
+
+
+		.image2 { overflow: hidden; width: 788px; height: 930px;}
+		.image2 img { width: 100%; cursor: crosshair; transition-duration: 1.2s;
+			      transition-property: width, height;
+			      animation: mymove 2s;}
+		.image2 img:hover {width:880px; }
+
+		.image3 {overflow: hidden; width: 452px; height: 930px;}
+		.image3 img {width:100%; cursor: crosshair; transition-duration: 1.2s;
+			      transition-property: width, height;
+			      animation: mymove 2s;}
+		.image3 img:hover {width:600px; }
+
+		.image4 {overflow: hidden; width: 452px;}
+		.image4 img {width:100%;}
+
+		.image10 {overflow: hidden; width: 380px; 
+				  -moz-transform:matrix(-1,0,0,1,0,0);
+				  -webkit-transform:matrix(-1,0,0,1,0,0);
+				  transform:matrix(-1,0,0,1,0,0);}
+		.image10 img {width:100%;}
+
+		.paper {float: left;}
+		.paper img {width: 1519px;}
+		.paper2 {float: left;}
+		.paper2 img {width: 1519px;}
+
+		.beige { position: absolute;}
+		.beige img { width: 1200px; position: absolute; top:619px; 
+					 animation-delay: 3s;
+		  			 animation-timing-function: ease-in;
+				     animation: no 3s;
+				     animation-fill-mode: forwards; }
+				     @keyframes no{
+				     from{left: -170em;}
+				     to{left: 0em; }
+		  }
+
+		.purple{background: #F7E943; width:900px; height:2px; 
+		      position:absolute; top:0px; left:-900px; 
+		      transform: rotate(90deg); 
+		      animation: mymove 4s;
+		      animation-fill-mode: forwards; }
+		      @keyframes mymove{
+		      from{top:-800px; }
+		      to{top:1600px;  } }
+
+		.beigemove {width: 1200px; height:100%; position: absolute; top: 150px;left: 615px; transform: rotate(90deg); animation: mymove 4s;animation-fill-mode: forwards;
+		    display: block; font-size: 1.5em; 
+		    -webkit-margin-before: 2em;
+		    -webkit-margin-after: 3em;
+		    -webkit-margin-start: -100px;
+		    -webkit-margin-end: 600px;}
+
+		.height1 img {height:180px;}
+
+		/*#f7f5ee
+		.violet {width: 1300px; float: left; margin:0 auto;}
+		.violet img{width: 1500px; height:600px; display:block; margin: 0 auto; float: left; margin-top:4em; padding-left: 0em;}*/
+
+		.logo2 {  background:rgba(0,0,0,0); margin-top: -26em; }
+		.logo2 img { width: 310px; height:192px; background:rgba(0,0,0,0); position: relative; transition: all 1.5s;}
+		.logo2 img:hover{transform: rotateY(180deg); }
+
+		a:link, a:visited, a: active {color:rgba(0,0,0,0.5;)}
+
+		nav{ width: 1300px; float: center; margin:auto; background:rgba(0,0,0,0);}
+
+		nav #logo { width: 80px; height:80px; background:rgba(0,0,0,0); position: fixed; }
+		nav #logo a{ display: block; width:117px;  height:41px; margin-left: 0em; background:rgba(0,0,0,0); margin-top: 30px;}
+		nav #logo img{ display: block; width:120px;  height:43px; background:rgba(0,0,0,0);}
+		nav #logo a:hover { background:rgba(255,255,255,0.5);}
+		/*nav .logo:hover { transition-duration: 1.2s; transform: rotateY(180deg);}*/
+
+
+		nav #main-nav{ width: 1145px; background:rgba(95,75,139,0); float:left; margin: 0; padding: 0; height: 0px;}
+		nav #main-nav li {float: right; width: 82px; height:50px;  list-style: none; background: }
+		nav #main-nav a{ background:white; display: block; background: rgba(0,0,0,0); text-align: center; position: fixed;height:3px; width:6%; text-decoration: none; margin-top: 30px;}
+		nav #main-nav a:hover {background :black; }
+
+		nav #menu-category { background: white; float:center; margin:0;
+			; padding:0; opacity: 0; }
+		nav #main-category li {float:left; width: 50px; opacity: 0;}
+
+		#marquee { margin-top: 8em;}
+
+		#line { width:900px; size: 30; height:35px; float:right; color: black;}
+		#dotted { width: 900px; border: 1px dotted color:gray; height: 50px;}
+
+		#godown{float: left;}
+
+		span{color: black;}
+		span:hover {color: red;}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div style="position: absolute;">
+			<div class="beige">
+				<img src="beige.png">
+			</div>
+	</div>
+
+	<div class="paperabsolute1">
+   		<div class="paper margintop12 marginleft-10 ">
+            <img src="paper1.png">
+         </div>
+         <div class="paper2 marginleft-10 margintop-1 height1">
+            <img src="paper2.png">
+         </div>
+         <div class="paper marginleft-10 margintop-1">
+            <img src="paper3.png">
+         </div>
+    </div>
+
+	<nav>
+		<div id="logo" class="logo">
+			<a href="index.html"> 
+				<img src="logo.png"> 
+			</a>
+		</div>
+
+		<div id="dotted">
+			<ul id="main-nav">
+				<li class="menu-category">
+					<a href="88clip.html"><p>88클립</p>
+					</a>
+				</li>
+			<li class="menu-category">
+				<a href="syndrome.html"><p>신드롬</p>
+				</a>
+			</li>
+			<li class="menu-category">
+				<a href="Out-of-print_declaration.html"><p>절판의 선언</p>
+				</a>
+			</li>
+			<li class="menu-category">
+				<a href="88generation.html"><p>88세대</p>
+				</a>
+			</li>	
+		</ul>
+		</div>
+		
+	</nav>
+
+	<div class="old">
+		<img src="old.png">
+	</div>
+
+	<div class="logo2">
+		<center>
+		<img src="logo-2.png" style="cursor:pointer;"
+			onMouseOver="this.src='logo2-2.png'"
+	     	onMouseOut="this.src='logo-2.png'"/>
+		<h1>88 세대  </h1>
+		<p1>승자독식 게임, 88세대</p1>
+		</center>
+	</div>
+
+	<br><br><br><br><br><br><br><br><br><br>
+
+	<section class="width1200">
+		<div class="beigeabsolute">
+			
+			<div class="image10" style="position: absolute; left: 1000px; top: 500px;">
+				<img src="10.png">
+			</div>
+		</div>
+
+		<div class="width600 left relative">
+			<div style="text-align: right">
+			<h2><span>절망</span>의 시대에 쓰는<br><span>희망</span>의 경제학</h2>
+			<p4><span>승자독식 게임</span>을 받아들인 탈출구가 없는 세대.</p4><br>
+			<p5>< 88만원 세대 > 中 </p5>
+			</div>
+		</div> 
+
+		<div class="width600 height275 left"></div>
+
+		<div>
+			<div class="marginright7 relative">
+				<div class="image1 margintop2-1">
+					<img src="1.png">
+				</div>
+			</div> 
+			<div class="width380 margintop2-1 textright marginright10 right relative">
+				<p5><span>경제학자 우석훈과 기자 출신 사회운동가 박권일이<br>함께 
+				쓴 책  < 88만원 세대 >에서 시작된 말</span>로, 88만원 세대 
+				에서 88만원은 우리나라 <span>비정규직의 평균 임금인 119만 
+				원에 20대의 평균 소득 비율 74퍼센트를 곱해서 산출한 
+				금액</span>을 말한다.<br><br>
+	 
+				그러나 이러한 개념 자체엔 관심이 없고 "20대는 88<br>
+				만원밖에 못버는 세대구나.."라고 결론부터 내려버린 
+				사람들이 많은지라 <span>아직까지도 본질적인 정의보다
+				사람들이 부여한 의미로 더 퍼져 있다.</span><br><br>
+	 
+				우리나라의 여러 세대 중 처음으로<br> 
+				<span>승자독식 게임을 받아들인 탈출구가 없는 세대.</span><br>
+				문화적으로 스타벅스, 뚜레주르와 같은 프랜차이즈를 
+				탐닉하는 등 <span>소비주의에 물들어 있으며, 사회 문제에
+				무관심하여 토익, 학점 등 스펙 쌓기에 열중</span>한다는 등의
+				특징을 지니고 있다. </p5>
+			</div>
+
+			<div class="more right marginright10 margintop2 relative">
+				<a href="http://book.naver.com/bookdb/book_detail.nhn?bid=3027415" target="_blank"> <img src="more.png"> </a>
+			</div>
+
+		</div>
+	
+	</section>
+
+
+
+   <section>
+
+   	
+
+   	<div class="relative">
+      <div class="width550 margintop14 left marginleft22">
+        	<div class="width50 left">
+        		<h3><span>119</span></h3>
+        	</div>
+        	<div class="width50 left margintop4" style="margin-left: -0.6em">
+        		<p6>(만 원)</p6> 
+        	</div>
+        	<div class="width50 left" style="margin-left: -1.5em">
+        		<h3>X <span>74</span></h3>
+        	</div>
+        	<div class="width50 left margintop4" style="margin-left: 0.7em">
+        		<p6>(%)</p6> 
+        	</div>
+        	<div class="width50 left" style="margin-left: -2.4em">
+        		<h3>=  <span>88</span></h3> 
+        	</div>
+        	<div class="width50 left margintop4" style="margin-left: 0.3em">
+        		<p6>(만 원)</p6>
+        	</div>
+      </div>
+
+      <div class="left width600 marginleft18 margintop-2">
+      		<div class="width600 textcenter">
+      			<p6>88만원 세대에서 88만원은 우리나라 비정규직의 평균 임금인 119만원에<br>
+      			20대의 평슌 소득비율 74퍼센트를 곱해서 산출한 금액.</p6>
+      		</div>
+      </div>
+
+      <div class="left width1200 margintop4 marginleft13">
+      		<div class="textcenter">
+      			<p6> <span>경제학자 우석훈과 기자 출신 사회운동가 박원일이 함께 쓴 책</span> <88만원 세대>에서 시작된 말. <br>
+      			그러나 이러한 개념자체에는 관심이 없고 <br>"20대는 88만원 밖에 못 버는 세대 구나..."라고 결론을 내린 사람들이 많은지라 <br><span>아직까지도 본질적인 정의보다 사람들이 부여한 의미로 더 퍼져있다.</span></p6>
+      		</div>
+      </div>
+   </div>
+   </section>
+
+	<section class="left width1200 margintop16">
+		<div>
+			<div class= "left width800 image2">
+				<img src="2.png">
+			</div>
+
+			<div class="left" style="width:260px; transform: rotateZ(90deg); margin-left: -5.5em; margin-top: 7em;">
+				<p6>↓ 우석훈, 박권일 <88만원 세대> 
+				</p6>
+			</div>
+
+			<div class="width400 height200 left marginleft2">
+			</div>
+
+			<div class="width400 height200 left marginleft2 margintop-5">
+			<h3>20대여, <span>토플책</span>을 덮<br>고
+					<span>바리케이드</span>를 치 <br>고
+					<span>짱돌을 들어라</span>.</h3><br>
+			</div>
+			<div class="left width400 height225 marginleft2 margintop4">
+				 <p4><span>짱돌</span></p4>	
+				<p6><br><br>저자들이 말하는 '짱돌'은 <span>은유적 표현.</span><br>
+				'짱돌'의 실제 내용은 <span>20대끼리의 연대</span>라고 볼 수<br>있다.
+				일례로 288페이지에서 저자들은 "만약 20대<br>1만 명 정도가 스타벅스에 가기를 거부하고 20대 사장이 직접 내려주는 커피와 차를 마시겠다 선언 했다 생각해보자"며 
+				짱돌의 의미를 설명하고 있다.</p6> 	
+			</div>
+			<div class="right more2 height100 marginleft2" style="margin-top: 1em">
+				<a href="http://book.naver.com/bookdb/book_detail.nhn?bid=3027415" target="_blank"> <img src="more.png"></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="left ">
+	<div class="left margintop10">
+		<div class="left width450 image3 marginleft5">
+			<img src="3.png">
+		</div>
+
+		<div class="left height100 marginleft4 margintop4">
+			<p4><span>승자독식</span></p4>
+		</div>
+
+		<div class="left width500 marginleft4">
+			<p6>승자독식 체제에 대한 서술 부분. 우석훈 박권일 공저 88만원 세대는 결국 20대가 스펙 쌓기에 열중하는 것은 그들이 어떤 <span>안전 사회망, 즉 바리케이드라고 불리우는 경쟁 완화 장치를 아무 것도 가지지 않은 채</span>로 오로지 엄친아, 엄친딸만 승리할 수 있는 경쟁, <span>'승자독식'의 경쟁에 내던져졌기 때문</span>이라고 진단하고 있다.<br><br>
+			이전의 세대들은 일종의 발전의 쇼케이스로서 미국의 역개방 정책의 수혜 아래에서, 노동시장이 완전고용 비슷하게 달성되어 심해지더라도 그것을 충분히 흡수할 만한 역량을 지녔었다.</p6>
+		</div>
+		<div class="left more3 marginleft4" style="margin-top: 2.5em">
+				<a href="http://news.khan.co.kr/kh_news/khan_art_view.html?artid=200712031845521&code=210000" target="_blank"> <img src="more.png"></a>
+		</div>
+	</div>
+	</section>
+
+	<section class="right margintop-11">
+	<div class="right ">
+		<div class="right width450 image3 marginright6">
+			<img src="4-1.png">
+			<img src="4-2.png">
+		</div>
+
+		<div class="right height100 marginright4 margintop10">
+			<p4><span>외국의 88세대</span></p4>
+		</div>
+
+		<div class="right width500 marginright4 textright">
+			<p6><span>= 일본의 ‘버블 세대’ = 유럽의 ‘천 유로 세대’<br>
+				= 미국의 ‘빈털터리 세대’ = 穷忙族(qiong mang)</span><br> <br>
+
+				유사한 의미로 볼 수 있지만 사회적 약자에게 더 가혹한 한국 사회의 현실을 생각하면 이들이 피부로 느낄 비참함은 훨씬 심각하다고 할 수 있다.</p6>
+		</div>
+		<div class="right more4 marginright4" style="margin-top: 2.5em">
+			<a href="http://news.khan.co.kr/kh_news/khan_art_view.html?artid=200712031845521&code=210000" target="_blank">	<img src="more.png"> </a>
+		</div>
+	</div>
+	</section>
+
+	
+
+	<section class="left margintop-11">
+	<div class=" left black footer footer-margin2">
+		<a href="index.html"> <img src="logo-3.png"></a><br><br>
+		<p3>If you want to contact our <br>
+		company, please contact us <br>
+		here.</p3>
+		<a href="https://www.instagram.com/0__197/" target="_blank">
+		<img src="contact.png"> </a>
+	</div>
+
+	<div class="left black footer footer-margin">
+		<p2># KIM SU RYEON <br>
+			# 김수련<p2> <br><br>
+		<p3> <br>e-mail : pinkpigjy27@naver.com<br>
+			mobile : 010- 2222 - 3333<br>
+		address : 안성시 석정동 중앙로</p3>
+	</div>
+
+	<div class="left black footer footer-margin">
+		<p2># HKNU design <br>
+			# 한경대학교<p2> <br><br>
+		<p3> <br>88만원 세대가 무얼 뜻하는 지 <br>아는가?
+			모르는 사람들을 위해 준비한 
+		#88만원_세대 #모음집 <br>#클립
+		#없는게 없다 !</p3>
+	</div>
+
+	<div class="black footer-width">
+		<div class="left black footer footer-margin">
+		<p2># 88만원세대 <br>
+			# 계급_아닌_계급<p2> <br><br>
+		<p3 style="color: white; font-weight: 400;"> 
+			 <br>_88세대</p3><br>
+		<p3 style=" text-decoration: none; color: white; font-weight: 400;"> 
+			-절판의 선언 <br></p3>
+		<p3 style=" text-decoration: none; color: white; font-weight: 400;">
+			 _신드롬</a> </p3><br>
+		<p3 style=" text-decoration: none; color: white; font-weight: 400;">
+			 _88클립</p3>
+		</div>
+	</div>
+	</section>
+
+<a style="display: scroll; position: fixed; bottom: 140px; right: -250px;" href="#" title="top"><img src="up2.png" style=" width:30%; "></a>
+
+			<a style="display: scroll; position: fixed; bottom: 48px; right: -249px;" href="#godown" title="down"><img src="down2.png" style=" width:30%; "></a>
+<section>
+	<div id="godown"></div>
+</section>
+
+</style>
+
+</head>
+
+<body>
+
+	
+
+</body>
+
+</html>
